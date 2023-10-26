@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <title>Search Page</title>
+        <div class="content">
+            <h1 style="text-align : center">Weather Search</h1>
+            <div class="form">
+                <form action="/weatherapp" method="POST"> <!-- Whatever data will be submited it will be given/submitted on the "/weatherapp" route
+                and try to excute the logic which is written for this route at server side-->
+                    <label for="city">Enter City : </label>
+                    <input type="text" name="city" id="city"><br>
+
+                    <label for="units">Enter Units : </label>
+                    <input type="text" name="units" id="units"><br>
+
+                    <label for="appid">Enter your API KEY : </label>
+                    <input type="text" name="appid" id="appid"><br><br>
+
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

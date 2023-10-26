@@ -1,0 +1,27 @@
+1. run the app.py file
+2. CTRL+C
+3. ls
+4. cd weather_app
+5. ls
+
+6. Q. If you get error as no module named requests
+    =>      In the terminal jst type pip install requests and enter 
+
+7. requirements.txt => used to keep all dependencies which we will be needed while deploying
+    the appln on cloud, bcz cloud is an empty system and in order to make sure
+    that our appln runs successfully on cloud we need to install all the dependencies of the appln
+    and those dependencies are stored in requirements.txt
+    a.  Flask
+        gunicorn => needed for cloud environment
+        requests
+    OR
+    b. {% comment %} pip install-r requirements.txt => this can be used to install all dependencies in 1 go {% endcomment %}
+    
+8. Steps to push the code in GitHub Repository
+    1. Create a new Repository
+    2. Run app.py
+    3. ls
+    4. cd weather_app
+    5. ls
+    6. git init
+    7. git add . => add a blank file in git
