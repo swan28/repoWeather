@@ -21,7 +21,8 @@ def takeWeatherData(): # bind this  func to the "/weatherapp" route
     # requests => to get data from URL
     response = requests.get(url, params=parameter)
     data = response.json()
-    return f"data : {data}"
+    city = data['name']
+    return f"data : {data}, city : {city}"
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0")
